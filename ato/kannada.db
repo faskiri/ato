@@ -1,92 +1,92 @@
-Naanu|Me / I am
-Naanu software engineer.|I am a software engineer
-Neenu|You
-Neenu student.|You are a student
-Namma|Ours
-Namma desha Bharata.|Our country is Bharata)
-Nimma|Yours
-Nimma ooru Bangalore.|Your home town is Bangalore
-Yaaru|Who
-Teacher yaaru?|Who is the teacher?
-Yaavaga|When
-Class yaavaga?|When is the class?
-Yelli|Where
-Ramu yelli?|Where is Ramu?
-Avaru|He / She (with respect). Also they / those people
-Avaru teacher.|He / She is a teacher
-Ivaru|He / She. This person / these people
-Ivaru students.|These people are students
-Ooru|Place / hometown
-Nanna ooru Mysore.|My place is Mysore
-Hesaru|Name
-Nanna hesaru Ramu.|My name is Ramu
-Gottu|Know
-Nanage English gottu.|I know English
-Gottilla|Don’t know
-Nanage C++ gottilla.|I don’t know C++
-Ishta|Like
-Nanage tea ishta.|I like tea.
-Baagilu|Door
-Idu baagilu.|This is the door)
-Kitaki|Window
-Adu kitaki.|That is the window
-Kurchi|Chair
-Idu kurchi.|This is chair
-Meju|Table
-Adu meju.|This is table
-Mane|House
-Idu namma mane.|This is my house
-Baa|Come
-Neenu illi baa.|you come here
-Banni|Come(with respect)
-Neevu illi banni.|you come here
-Hege|How
-Neenu illige hege bande?|How did you come here?
-Idu|This / It
-Idu nanna pennu.|it is my pen
-Adu|That
-Adu nanna mane|that is my house
-Yaake|Why
-Neenu yaake allige hode?|why did you go there?
-Yenu|What
-Idu yenu?|What is this?
-Houdu|Yes
-Houdu, adu nanage beku.|Yes, I need it
-Alla|Not
-Nanna hesaru Suresha alla.|My name is not Suresh
-Beku|Want
-Nanage pencil beku.|I want pencil
-Beda|Do not want
-Nanage idli beda.|I do not want Idli
-Hogu / Hogi|Go / wrp
-Neenu hogu / Neevu hogi.|You go
-Hoda / Hodaru|(he) Went / wrp
-Avanu hoda / Avaru hodaru.|He went
-HodaLu / Hodaru|(she) Went / wrp
-AvaLu hodaLu/ Avaru hodaru.|She went
-Banda / Bandaru|(he) Came / wrp
-Avanu banda / Avaru bandaru.|He came
-BandaLu / Bandaru|(she) Came / wrp
-Avalu bandalu / Avaru bandaru.|She came
-Alli|There
-Alli pustaka ide.|Book is there
-Illi|Here
-Illi nodu|See here
-Baa / Banni|Come / wrp
-Bega baa.|Come fast
-Thago / Thagolli|Take / wrp
-Pen thago|Take the pen
-KeLu / keLi|Listen / wrp
-Nanna maathu kelu|Listen to me
-HeLu / HeLi|Tell / wrp
-Nanage kathe helu|Tell me a story
-OLage|Inside
-Olage yenu ide?|What is inside?
-Horage|Outside
-Horage maLe ide.|It is raining outside
-Nilli|Stop
-Alli nilli.|Stop there
-Eega|Now
-Eega neenu baa.|Come now
-Aaga|Then
-Aaga maLe banthu.|It rained then
+0|Naanu|Me / I am
+1|Naanu software engineer.|I am a software engineer
+0|Neenu|You
+1|Neenu student.|You are a student
+0|Namma|Ours
+1|Namma desha Bharata.|Our country is Bharata)
+0|Nimma|Yours
+1|Nimma ooru Bangalore.|Your home town is Bangalore
+0|Yaaru|Who
+1|Teacher yaaru?|Who is the teacher?
+0|Yaavaga|When
+1|Class yaavaga?|When is the class?
+0|Yelli|Where
+1|Ramu yelli?|Where is Ramu?
+0|Avaru|He / She (with respect). Also they / those people
+1|Avaru teacher.|He / She is a teacher
+0|Ivaru|He / She. This person / these people
+1|Ivaru students.|These people are students
+0|Ooru|Place / hometown
+1|Nanna ooru Mysore.|My place is Mysore
+0|Hesaru|Name
+1|Nanna hesaru Ramu.|My name is Ramu
+0|Gottu|Know
+1|Nanage English gottu.|I know English
+0|Gottilla|Don't know
+1|Nanage C++ gottilla.|I don't know C++
+0|Ishta|Like
+1|Nanage tea ishta.|I like tea.
+0|Baagilu|Door
+1|Idu baagilu.|This is the door)
+0|Kitaki|Window
+1|Adu kitaki.|That is the window
+0|Kurchi|Chair
+1|Idu kurchi.|This is chair
+0|Meju|Table
+0|Adu meju.|This is table
+0|Mane|House
+1|Idu namma mane.|This is my house
+0|Baa|Come
+1|Neenu illi baa.|you come here
+0|Banni|Come(with respect)
+1|Neevu illi banni.|you come here
+0|Hege|How
+1|Neenu illige hege bande?|How did you come here?
+0|Idu|This / It
+1|Idu nanna pennu.|it is my pen
+0|Adu|That
+1|Adu nanna mane|that is my house
+0|Yaake|Why
+1|Neenu yaake allige hode?|why did you go there?
+0|Yenu|What
+0|Idu yenu?|What is this?
+0|Houdu|Yes
+1|Houdu, adu nanage beku.|Yes, I need it
+0|Alla|Not
+1|Nanna hesaru Suresha alla.|My name is not Suresh
+0|Beku|Want
+1|Nanage pencil beku.|I want pencil
+0|Beda|Do not want
+1|Nanage idli beda.|I do not want Idli
+1|Hogu / Hogi|Go / wrp
+1|Neenu hogu / Neevu hogi.|You go
+1|Hoda / Hodaru|(he) Went / wrp
+1|Avanu hoda / Avaru hodaru.|He went
+1|HodaLu / Hodaru|(she) Went / wrp
+1|AvaLu hodaLu/ Avaru hodaru.|She went
+1|Banda / Bandaru|(he) Came / wrp
+1|Avanu banda / Avaru bandaru.|He came
+1|BandaLu / Bandaru|(she) Came / wrp
+1|Avalu bandalu / Avaru bandaru.|She came
+0|Alli|There
+1|Alli pustaka ide.|Book is there
+0|Illi|Here
+0|Illi nodu|See here
+1|Baa / Banni|Come / wrp
+0|Bega baa.|Come fast
+1|Thago / Thagolli|Take / wrp
+0|Pen thago|Take the pen
+1|KeLu / keLi|Listen / wrp
+1|Nanna maathu kelu|Listen to me
+1|HeLu / HeLi|Tell / wrp
+1|Nanage kathe helu|Tell me a story
+0|OLage|Inside
+1|Olage yenu ide?|What is inside?
+0|Horage|Outside
+1|Horage maLe ide.|It is raining outside
+0|Nilli|Stop
+1|Alli nilli.|Stop there
+0|Eega|Now
+1|Eega neenu baa.|Come now
+0|Aaga|Then
+1|Aaga maLe banthu.|It rained then

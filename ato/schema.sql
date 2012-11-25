@@ -1,9 +1,10 @@
 CREATE TABLE dictionary
 (
   id            INTEGER PRIMARY KEY ASC,
-  weight        INTEGER,
+  difficulty    INTEGER,
   key           STRING,
-  value         STRING
+  value         STRING,
+  tag           STRING
 );
 
 CREATE TABLE scores

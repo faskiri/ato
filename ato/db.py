@@ -75,7 +75,7 @@ class DB:
   question_limit_choice = 20
   uid = 0 # single user for now
   n_unseen_questions = """
-    SELECT id,weight
+    SELECT id,difficulty
       FROM dictionary
       WHERE id IN (
         SELECT id
@@ -84,12 +84,12 @@ class DB:
         SELECT dict_id
           FROM scores
           WHERE uid=?)
-      ORDER BY weight
+      ORDER BY difficulty
       LIMIT {unseen_question_limit}
       """.format(unseen_question_limit=question_limit_choice/2)
 
   n_seen_questions = """
-    SELECT id,weight
+    SELECT id,difficulty
       FROM dictionary
       WHERE id IN (
         SELECT dict_id
@@ -102,7 +102,7 @@ class DB:
              last_updated < DATETIME('now','-1 day')) OR
             (score <= {low_score} AND
              last_updated < DATETIME('now','-10 minutes'))))
-      ORDER BY weight
+      ORDER BY difficulty
       LIMIT {seen_question_limit}
       """.format(
           decent_score=Item.max_score*3/4,
@@ -133,11 +133,18 @@ class DB:
         FROM scores
         GROUP BY uid
   """
+  insert_questions = """
+    INSERT INTO dictionary
+      VALUES (NULL, :difficulty, :key, :value, :tag)
+  """
 
   def open(self, fname):
     logging.debug("Loading from %s", fname)
+    is_new = not os.path.exists(fname)
     self.conn = sqlite3.connect(fname)
     self.conn.row_factory = sqlite3.Row
+    if is_new:
+      self.init(fname)
 
   def close(self):
     c = self.conn.cursor()
@@ -184,8 +191,32 @@ class DB:
       last_score = score_row['score']
     return Item(row, last_score)
 
+  def init(self, fname):
+    path = os.path.dirname(__file__)
+    with open(os.path.join(path, 'schema.sql'), 'r') as f:
+      schema = f.read()
+      self.conn.executescript(schema)
+    self.load('basic', os.path.join(path, 'kannada.db'))
+
+  def load(self, tag, fname):
+    c = self.conn.cursor()
+    with open(fname, 'r') as f:
+      for entry in f.readlines():
+        items = entry.split('|')
+        assert len(items) == 3, "Expected difficulty[0-2]|question|answer. Got: %s" % entry
+        data = {
+          'key':        items[1],
+          'value':      items[2],
+          'difficulty': items[0],
+          'tag':        tag,
+          }
+        logging.debug("Inserting: %s", data)
+        c.execute(DB.insert_questions, data)
+    self.conn.commit()
+
 if __name__ == '__main__':
   import sys
   db = DB()
   db.open(sys.argv[1])
-  print db.getNextItem()
+  db.load(sys.argv[2], sys.argv[3])
+  db.close()
